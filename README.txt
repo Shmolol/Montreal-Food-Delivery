@@ -29,10 +29,8 @@ Viewing Cart: Click on the "Cart" link in the navigation bar to view your cart a
 
 Completing Order: Fill out the required information on the checkout page and click "Place Order" to complete your order.
 
-## Source Code
-Available on LEA
 
 ## Credits
 Coded by Karl Alvarado
 
-## Future Implementation
+##Future Implementation
