@@ -33,4 +33,4 @@ Completing Order: Fill out the required information on the checkout page and cli
 ## Credits
 Coded by Karl Alvarado
 
-##Future Implementation
+## Future Implementation
