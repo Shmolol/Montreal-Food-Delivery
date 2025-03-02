@@ -1,0 +1,88 @@
+{
+    "entrees": [
+        {
+            "id": "1",
+            "name": "Chicken Tenders",
+            "image": "./img/chickenTenders.png",
+            "price": "$7"
+        },
+        {
+            "id": "2",
+            "name": "Grilled Chicken Salad",
+            "image": "./img/grilledChickenSalad.png",
+            "price": "$8"
+        },
+        {
+            "id": "3",
+            "name": "Veggie Wrap",
+            "image": "./img/veggieWrap.png",
+            "price": "$7"
+        }
+    ],
+    "burgers": [
+        {
+            "id": "4",
+            "name": "Cheeseburger",
+            "image": "./img/cheeseburger.png",
+            "price": "$7"
+        },
+        {
+            "id": "5",
+            "name": "Deluxe Burger",
+            "image": "./img/deluxeBurger.png",
+            "price": "$7"
+        },
+        {
+            "id": "6",
+            "name": "Veggie Burger",
+            "image": "./img/veggieBurger.png",
+            "price": "$7"
+        }
+    ],
+    "sides": [
+        {
+            "id": "7",
+            "name": "French Fries",
+            "image": "./img/fries.png",
+            "price": "$7"
+        },
+        {
+            "id": "8",
+            "name": "Onion Rings",
+            "image": "./img/onionRings.png",
+            "price": "$7"
+        },
+        {
+            "id": "9",
+            "name": "Coleslaw",
+            "image": "./img/coleslaw.png",
+            "price": "$7"
+        }
+    ],
+    "drinks": [
+        {
+            "id": "10",
+            "name": "Coke",
+            "image": "./img/coke.png",
+            "price": "$7"
+        },
+        {
+            "id": "11",
+            "name": "Iced Tea",
+            "image": "./img/nestea.png",
+            "price": "$7"
+        },
+        {
+            "id": "12",
+            "name": "Lemonade",
+            "image": "./img/lemonade.png",
+            "price": "$7"
+        },
+        {
+            "id": "13",
+            "name": "Vanilla Milkshake",
+            "image": "./img/milkshake.png",
+            "price": "$7"
+        }
+    ]
+}

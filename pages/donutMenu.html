@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-------------------------------------------------------
+    
+    Final Project
+    Written by: Karl Alvarado 6211078
+    For "Internet Programming" Section 1 - Winter 2024
+
+--------------------------------------------------------->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/menuStyles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navLink">
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About Us</a>
+        </nav>
+
+        <!-- Logo -->
+        <div class="logo">
+            <!-- image source: [] -->
+            <a href="index.html" class="logo"><img src="/img/SMDLogo.png" alt="delivery-logo"> SMD Delivery </a>
+        </div>
+
+        <div class="navLink">
+            <a href="/pages/cart.html">
+                <i class="cartLink">CART</i>
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div id="menuTitle">
+            <div id="image">
+                <img src="/img/donutShop.png" alt="donut Menu" width="25%" height="auto">
+            </div>
+            <div>
+                <h1>Donut Palace</h1>
+            </div>
+        </div>
+
+
+        <div class="foodSection" id="Classic">
+            <h2>Classic Donuts</h2>
+            <table border="1" class="table">
+                <tr>
+                    <td><img src="" alt="Glazed Donut"></td>
+                    <td>Glazed</td>
+                    <td>$2</td>
+                    <td><button
+                            onclick="addToCart('14','Chicken Tenders', '$7', '/img/chickenTenders.png')"
+                            class="cart-btn">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="" alt="Chocolate Icing"></td>
+                    <td>Chocolate Icing</td>
+                    <td>$2</td>
+                    <td><button
+                            onclick="addToCart('15','Chicken Tenders', '$7', '/img/chickenTenders.png')"
+                            class="cart-btn">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="" alt="Old Fashioned"></td>
+                    <td>Old Fashioned</td>
+                    <td>$2</td>
+                    <td><button
+                            onclick="addToCart('16','Chicken Tenders', '$7', '/img/chickenTenders.png')"
+                            class="cart-btn">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="" alt="Powdered Sugar"></td>
+                    <td>Powdered Sugar</td>
+                    <td>$2</td>
+                    <td><button
+                            onclick="addToCart('17','Chicken Tenders', '$7', '/img/chickenTenders.png')"
+                            class="cart-btn">Add to Cart</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="foodSection" id="Filled">
+            <h2>Filled Donuts</h2>
+            <table border="1" class="table">
+                <tr>
+                    <td><img src="" alt="Boston Cream"></td>
+                    <td>Boston Cream</td>
+                    <td>$3</td>
+                    <td><button
+                            onclick="addToCart('18','Chicken Tenders', '$7', '/img/chickenTenders.png')"
+                            class="cart-btn">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="" alt="Raspberry Filled"></td>
+                    <td>Raspberry Filled</td>
+                    <td>$3</td>
+                    <td><button
+                            onclick="addToCart('19','Chicken Tenders', '$7', '/img/chickenTenders.png')"
+                            class="cart-btn">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="" alt="Nutella Filled"></td>
+                    <td>Nutella Filled</td>
+                    <td>$3</td>
+                    <td><button
+                            onclick="addToCart('20','Chicken Tenders', '$7', '/img/chickenTenders.png')"
+                            class="cart-btn">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="" alt="Custard Filled"></td>
+                    <td>Custard Filled</td>
+                    <td>$3</td>
+                    <td><button
+                            onclick="addToCart('21','Chicken Tenders', '$7', '/img/chickenTenders.png')"
+                            class="cart-btn">Add to Cart</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="foodSection" id="Gourmet">
+            <h2>Gourmet Donuts</h2>
+            <table border="1" class="table">
+                <tr>
+                    <td><img src="" alt="Matcha Green Tea"></td>
+                    <td>Matcha</td>
+                    <td>$5</td>
+                    <td><button
+                            onclick="addToCart('22','Chicken Tenders', '$7', '/img/chickenTenders.png')"
+                            class="cart-btn">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="" alt="Salted Caramel"></td>
+                    <td>Salted Caramel</td>
+                    <td>$5</td>
+                    <td><button
+                            onclick="addToCart('23','Chicken Tenders', '$7', '/img/chickenTenders.png')"
+                            class="cart-btn">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="" alt="Tiramisu"></td>
+                    <td>Tiramisu</td>
+                    <td>$5</td>
+                    <td><button
+                            onclick="addToCart('24','Chicken Tenders', '$7', '/img/chickenTenders.png')"
+                            class="cart-btn">Add to Cart</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="foodSection" id="Drinks">
+            <h2>Drinks</h2>
+            <table border="1" class="table">
+                <tr>
+                    <td><img src="" alt="Coffee"></td>
+                    <td>Coffee</td>
+                    <td>$4</td>
+                    <td><button
+                            onclick="addToCart('25','Chicken Tenders', '$4', '/img/chickenTenders.png')"
+                            class="cart-btn">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="" alt="Espresso"></td>
+                    <td>Espresso</td>
+                    <td>$4</td>
+                    <td><button
+                            onclick="addToCart('26','Chicken Tenders', '$4', '/img/chickenTenders.png')"
+                            class="cart-btn">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="" alt="Latte"></td>
+                    <td>Latte</td>
+                    <td>$4</td>
+                    <td><button
+                            onclick="addToCart('27','Chicken Tenders', '$4', '/img/chickenTenders.png')"
+                            class="cart-btn">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="" alt="Hot Chocolate"></td>
+                    <td>Hot Chocolate</td>
+                    <td>$4</td>
+                    <td><button
+                            onclick="addToCart('28','Hot Chocolate', '$4', '/img/chickenTenders.png')"
+                            class="cart-btn">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td><img src="" alt="Iced Coffee"></td>
+                    <td>Iced Coffee</td>
+                    <td>$4</td>
+                    <td><button
+                            onclick="addToCart('29','Iced Coffee', '$4', '/img/chickenTenders.png')"
+                            class="cart-btn">Add to Cart</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <button id="goToCartButton" onclick="goToCart()">View Cart</button>
+    </main>
+    <footer>
+        <small>
+            <i>
+                Contact Us!
+            </i>
+            <a href="https://twitter.com/home">Twitter</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="mailto:smddelivery@example.com">E-Mail</a>
+
+
+            <div class="footerBottom">
+                <span>© 2024 SMD Delivery | All rights reserved</span>
+
+                <div class="termsPrivacy">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+
+            </div>
+        </small>
+    </footer>
+
+    <script src="/js/addToCart.js"></script>
+</body>
+
+</html>

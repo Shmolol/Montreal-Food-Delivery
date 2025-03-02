@@ -1,0 +1,209 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffcc99;
+    padding: 20px;
+}
+
+main {
+    min-height: 82vh;
+    padding: 20px;
+    background-color: #f9e5d7;
+}
+
+nav {
+    background-color: #ffcc99;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    padding: 0px 20px;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    background-color: #333333;
+    color: white;
+    padding: 20px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+button {
+    background-color: #ff6600;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+p {
+    font-size: 18px;
+}
+
+#menus {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#menus a {
+    text-align: center;
+    margin: 10px;
+    max-width: 200px;
+    background-color: #feffd6;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#menus a img {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Set a maximum width for the images */
+}
+
+#menus a span {
+    display: block;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #666666;
+}
+
+#about {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.6;
+}
+
+#summary {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#summary th, td {
+    background-color: #ffcc99;
+    padding: 10px;
+    border: 1px solid #000000;
+    text-align: left;
+}
+
+#userInfo form {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Sizing of small screens */
+@media only screen and (max-width: 499px) {
+    header {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 8px 15px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    #menus a {
+        margin: 10px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    footer a {
+        margin: 0 5px;
+    }
+}
+
+/* Sizing of medium screens */
+@media only screen and (min-width: 500px) and (max-width: 999px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    #menus a {
+        margin: 20px;
+    }
+
+    footer a {
+        margin: 0 10px;
+    }
+}
+
+/* Sizing for large screens */
+@media only screen and (min-width: 1000px) {
+    header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    button {
+        padding: 12px 25px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    #menus a {
+        margin: 30px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    footer a {
+        margin: 0 15px;
+    }
+}

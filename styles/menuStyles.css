@@ -1,0 +1,293 @@
+/* <!-------------------------------------------------------
+    
+    Final Project
+    Written by: Karl Alvarado 6211078
+    For "Internet Programming" Section 1 - Winter 2024
+
+---------------------------------------------------------> */
+body,
+html {
+    min-height: 100vh;
+}
+
+body {
+    margin-top: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f9e5d7;
+}
+
+header {
+    background-color: #ffcc99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+}
+
+.navLink {
+    display: flex;
+    padding: 10px;
+}
+
+.navLink a {
+    padding: 0px 35px 0px 0px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navLink a:hover {
+    color: #ff6600;
+}
+
+.logo {
+    margin-left: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.logo a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 40px;
+
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 300%;
+}
+
+#menuTitle {
+    display: flex;
+}
+
+#image img {
+    float: left;
+    background-size: cover;
+}
+
+
+/* Styling for brand section titles */
+.foodSection {
+    margin-top: 8vh;
+    /* Top margin for spacing */
+    margin-bottom: 4rem;
+    /* Bottom margin for spacing */
+    text-align: center;
+    /* Center alignment for titles */
+}
+
+.table {
+    width: 90%;
+
+    align-items: center;
+    border-collapse: collapse;
+}
+
+.table th {
+    border: 1px #000000;
+
+}
+
+.table td {
+    width: 115px;
+    height: 110px;
+}
+
+.table img {
+    height: 50px;
+}
+
+#goToCartButton {
+    align-items: end;
+}
+
+
+.footerBottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333333;
+    color: white;
+    padding: 20px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #ff6600;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff8533;
+}
+
+
+
+/* Sizing of small screens */
+@media only screen and (max-width: 699px) {
+    header {
+        padding: 10px 10px;
+    }
+
+    main {
+        margin-top: 110px;
+    }
+
+    .navLink {
+        display: contents;
+        padding: 10px;
+    }
+    
+    .navLink a {
+        padding: 80px 35px 0px 0px;
+        color: #000000;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .logo {
+        margin-left: -100px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+    }
+    
+    .logo a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 30px;
+    
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        height: 300%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 8px 15px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .table {
+        margin: 15px 25px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    footer a {
+        margin: 0 5px;
+    }
+}
+
+/* Sizing of medium screens */
+@media only screen and (min-width: 700px) and (max-width: 999px) {
+    header {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+
+    .table {
+        margin: 10px 55px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    #menus a {
+        margin: 20px;
+    }
+
+    footer a {
+        margin: 0 10px;
+    }
+}
+
+/* Sizing for large screens */
+@media only screen and (min-width: 1000px) {
+    header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .table {
+        margin: 20px 75px;
+    }
+
+    button {
+        padding: 12px 25px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    #menus a {
+        margin: 30px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    footer a {
+        margin: 0 15px;
+    }
+}
